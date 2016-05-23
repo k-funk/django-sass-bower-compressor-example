@@ -129,9 +129,5 @@ COMPRESS_ENABLED = True
 COMPRESS_URL = STATIC_URL
 
 COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'sample_app.compressor_filters.PatchedSCSSCompiler'),
-)
-
-COMPRESS_CSS_FILTERS = (
-    'sample_app.compressor_filters.CustomCssAbsoluteFilter',
+    ('text/x-scss', 'django_libsass.SassCompiler'),
 )
