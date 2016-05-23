@@ -126,7 +126,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # django-compressor
 
 COMPRESS_ENABLED = True
-COMPRESS_URL = STATIC_URL
 
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'sample_app.compressor_filters.PatchedSCSSCompiler'),
